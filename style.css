@@ -732,6 +732,11 @@ footer .footerNav ul li > a {
       color: var(--title-color);
     }
 
+    #section02 .jobsTab.active li.on i{
+      transform: rotateZ(-180deg);
+      transition: 0.5s;
+    }
+
 
     #section03 .gallery {
       flex-direction: column;
