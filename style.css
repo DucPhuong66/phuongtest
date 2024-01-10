@@ -240,17 +240,7 @@ footer .commonBtn:hover {
   border-color: var(--white);
 }
 
-#section01 {
-  /* padding-top: 20px;
-    background: url(./images/common/banner.jpg)  no-repeat center;
-    background-size: cover;
-    height: 100vh; */
-}
-
 #section01.section {
-  /* flex-direction: column;
-    justify-content: center;
-    padding-left: 108px; */
   position: relative;
 }
 
@@ -386,11 +376,6 @@ footer .commonBtn:hover {
   letter-spacing: 1.92px;
   font-weight: bold;
 }
-
-/* #section02 .swiper-button-prev {
-    left: -10px !important;
-    z-index: 10;
-} */
 
 #section03 img {
   width: 100%;
@@ -613,12 +598,97 @@ footer .footerNav ul li > a {
 }
 
 @media only screen and (max-width: 768px) {
-  select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
-  } 
+  
+  /* lang btn */
+  .wrapperDropdown {
+    position: relative;
+    display: inline-block; 
+    margin-right: 20px;
+    padding: 2px 5px;
+    background: transparent;
+    text-align: left;
+    color: var(--white);
+    border: solid 1px var(--white);
+    cursor: pointer;
+  }
+   
+  .wrapperDropdown .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: .5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .wrapperDropdown .dropdown li {
+    padding: 5px;
+    border-bottom: 1px solid var(--white);
+    overflow: hidden;
+    transition: .5s ease;
+  }
+  
+  .wrapperDropdown .dropdown li:last-child {
+    border-bottom: none;
+  }
+  
+  .wrapperDropdown .dropdown li:hover {
+    background: rgba(197, 239, 247, .55);
+  }
+  
+  .wrapperDropdown.active .dropdown {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /*end btn*/
+
+  
+  .menuBtn {
+    color: var(--white);
+  }
+
+  .menuBtn:hover, .closeMenu:hover {
+    cursor: pointer;
+  }
+
+  .closeMenu {
+    text-align: right;
+    padding-right: 30px;
+    color: var(--white);
+  }
+
+  .menuMb {
+    padding: 30px 0;
+    position: absolute;
+    right: -700px;
+    top: 0;
+    background-color: var(--primary);
+    width: 90%;
+    transition: 0.5s;
+    height: 90vh;
+  }
+
+  .menuMb li > a {
+    color: var(--white)
+  }
+
+  .menuMb.active {
+    right: 0;
+    display: block;
+  }
+
+  .menuMb > ul {
+    flex-direction: column;
+  }
+
+  .menuMb > ul > li {
+    padding: 30px;
+  }
   
   .container {
       max-width: 100%;
@@ -648,10 +718,6 @@ footer .footerNav ul li > a {
       width: 100%;
     }
 
-    /* #section02 .jobsTab li.on i {
-      color: var(--white)
-    } */
-
     #section02 .jobsTab li.on {
         background-color: var(--white);
     }
@@ -660,9 +726,6 @@ footer .footerNav ul li > a {
       color: var(--title-color);
     }
 
-    #section02 .jobsTab li.on i {
-
-    }
 
     #section03 .gallery {
       flex-direction: column;
