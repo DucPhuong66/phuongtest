@@ -238,6 +238,7 @@ footer .commonBtn:hover {
   background-color: var(--title-color);
   color: var(--white);
   border-color: var(--white);
+  transition: all ease-out 0.5s;
 }
 
 #mainVisual {
@@ -275,6 +276,8 @@ footer .commonBtn:hover {
   color: var(--primary);
   background-color: var(--white);
   border-color: var(--primary);
+  transition: all ease-out 0.5s;
+
 }
 
 #latestWorks img {
@@ -479,6 +482,10 @@ footer .commonBtn:hover {
   border-color: var(--primary);
 }
 
+.topInfo .logoFooter {
+  display: block;
+}
+
 footer .topInfo {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -498,6 +505,10 @@ footer .contactArea {
 
 footer .icon {
   gap: 12px;
+}
+
+footer .icon a {
+  display: block;
 }
 
 footer .footerNav h4 {
