@@ -1,26 +1,26 @@
-var swiper = new Swiper(".swiper", {
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+// var swiper = new Swiper(".swiper", {
+//     autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//       },
 
-      slidesPerView: 3,
-      spaceBetween: 24,
-      freeMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-  });
+//       slidesPerView: 3,
+//       spaceBetween: 24,
+//       freeMode: true,
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
 
-  $(window).on("scroll", function() {
-    if($(window).scrollTop() > 50) {
-        $("#navbar").addClass("active");
-    } else {
-        //remove the background property so it comes transparent again (defined in your css)
-       $("#navbar").removeClass("active");
-    }
-});
+//   $(window).on("scroll", function() {
+//     if($(window).scrollTop() > 50) {
+//         $("#header").addClass("active");
+//     } else {
+//         //remove the background property so it comes transparent again (defined in your css)
+//        $("#header").removeClass("active");
+//     }
+// });
 
 // Show the first tab and hide the rest PC
 $('.jobsTab li:first-child').addClass('on');
@@ -67,12 +67,12 @@ $('.langMb li').click(function () {
   $(".defaultLang").html(current);
 });
 
-$('.hiddenMenu .menuBtn').click(function () {
-  $('.menuMb').toggleClass("active");
+$('.menuBtn').click(function () {
+  $('.menuBox').toggleClass("active");
 })
 
 $('.close').click(function () {
-  $('.menuMb').toggleClass("active");
+  $('.menuBox').toggleClass("active");
 })
 
 
@@ -115,6 +115,28 @@ dropDown.prototype = {
   }
 }
  
+
+
+let width = $(window).width() 
+if (width > 768) {
+  var swiper = new Swiper(".swiper", {
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+
+      slidesPerView: 3,
+      spaceBetween: 24,
+      freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+} else {
+  $('.overlay .name br').remove()
+}
+
 
 
 

@@ -1,818 +1,478 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DoanDucPhuong</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <!-- og -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image:src" content="">
+  <meta name="twitter:description" content="">
+  <meta property="og:description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <title>DoanDucPhuong</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <header>
-      <div id="navbar" class="">
-        <div class="container displayFlex">
-          <h1 class="logo">
-            <img src="./images/common/logo.png" alt="logo" />
-          </h1>
-          <div class="pc menu displayFlex">
+<body>
+  <header>
+    <div id="header">
+      <div class="container displayFlex">
+        <h1 class="logo">
+          <a href="#"><img src="./images/common/logo.png" alt="logo" /></a>
+        </h1>
+        <div class="header_r displayFlex">
+          <p class="menuBtn sp">MENU</p>
+          <div class="menuBox">
+            <div class="closeMenu">
+              <div class="close"></div>
+            </div>
             <ul class="nav displayFlex">
-              <li><a href="">What we do</a></li>
-              <li><a href="">Our Work</a></li>
-              <li><a href="">Who We are</a></li>
-              <li><a href="">Get in touch</a></li>
-            </ul>
-            <ul class="lang displayFlex">
-              <li class="on">En</li>
-              <li>Jp</li>
-              <li>Vn</li>
+              <li><a href="#">What we do</a></li>
+              <li><a href="#">Our Work</a></li>
+              <li><a href="#">Who We are</a></li>
+              <li><a href="#">Get in touch</a></li>
             </ul>
           </div>
-          <div class="sp">
-            <div class="displayFlex">
-              <div class="wrapperDropdown" id="myDropdown">
-                <span>EN</span>
-                <ul class="dropdown">
-                  <li>EN</li>
-                  <li>JP</li>
-                  <li>VN</li>
-                </ul>
-              </div>
-
-              <div class="hiddenMenu">
-                <p class="menuBtn">MENU</p>
-                <div class="menuMb">
-                  <div class="closeMenu"><div class="close"></div></div>
-                  <ul class="nav displayFlex">
-                    <li><a href="">What we do</a></li>
-                    <li><a href="">Our Work</a></li>
-                    <li><a href="">Who We are</a></li>
-                    <li><a href="">Get in touch</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+          <ul class="lang displayFlex pc">
+            <li class="on">En</li>
+            <li>Jp</li>
+            <li>Vn</li>
+          </ul>
+          <div class="wrapperDropdown sp" id="myDropdown">
+            <span>EN</span>
+            <ul class="dropdown">
+              <li>EN</li>
+              <li>JP</li>
+              <li>VN</li>
+            </ul>
           </div>
         </div>
       </div>
-    </header>
-    <div id="content">
-      <div id="mainVisual">
-        <img
-          class="pc mainBanner"
-          src="./images/top/banner.jpg"
-          alt="banner"
-        />
-        <img
-          class="sp mainBanner"
-          src="./images/top/banner_mb.jpg"
-          alt="banner"
-        />
-        <div class="contentBox">
-          <h2>
+    </div>
+  </header>
+  <div id="content">
+    <div id="mainVisual">
+      <div class="container">
+        <div class="boxTxt">
+          <p class="mainTxt">
             We bring emotion <br />
             to your product
-          </h2>
-          <a href="#" class="commonBtn"> See who me are </a>
+          </p>
+          <p><a href="#" class="commonBtn"> See who me are </a></p>
         </div>
       </div>
-      <section id="latestWorks"  class="section greyBg">
-        <div class="container">
-          <h3 class="sectionTitle centerText">Latest works</h3>
-          <p class="descTitle centerText">WE BRING THIS SPECIAL IDEA</p>
+    </div>
+    <section id="latestWorks" class="section greyBg">
+      <div class="container">
+        <h2 class="sectionTitle centerText">Latest works</h2>
+        <p class="descTitle centerText">WE BRING THIS SPECIAL IDEA</p>
 
-          <ul class="jobsTab displayFlex">
-            <li class="displayFlex">
-              <a href="#tabs-1">Branding</a>
-              <i class="sp fa-solid fa-angle-down"></i>
-            </li>
-            <li class="displayFlex">
-              <a href="#tabs-2">Creative marketing</a>
-            </li>
-            <li class="displayFlex"><a href="#tabs-3">Social Media</a></li>
-            <li class="displayFlex"><a href="#tabs-4">Web Development</a></li>
-          </ul>
-          <div class="pc">
-            <div class="sliderContent" id="tabs-1">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
+        <ul class="jobsTab displayFlex">
+          <li class="displayFlex">
+            <a href="#tabs-1">Branding</a>
+            <i class="sp fa-solid fa-angle-down"></i>
+          </li>
+          <li class="displayFlex">
+            <a href="#tabs-2">Creative marketing</a>
+          </li>
+          <li class="displayFlex"><a href="#tabs-3">Social Media</a></li>
+          <li class="displayFlex"><a href="#tabs-4">Web Development</a></li>
+        </ul>
+        <div class="sliderContent" id="tabs-1">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
                   </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
+                  <div class="overlay">
+                    <div class="contentOverlay">
+                      <div class="cate">Key visual</div>
+                      <div class="name">
+                        Lats <br />
+                        wrks
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="sliderContent" id="tabs-2">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider2.jpg" alt="" />
                   </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
+                  <div class="overlay">
+                    <div class="contentOverlay">
+                      <div class="cate">Key visual</div>
+                      <div class="name">
+                        Lats <br />
+                        wrks
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="sliderContent" id="tabs-3">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider3.jpg" alt="" />
                   </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
+                  <div class="overlay">
+                    <div class="contentOverlay">
+                      <div class="cate">Key visual</div>
+                      <div class="name">
+                        Lats <br />
+                        wrks
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-            </div>
-            <div class="sliderContent" id="tabs-4">
-              <div class="swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
                   </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider1.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider2.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div>
-                      <img src="./images/top/slider3.jpg" alt="slider" />
-                    </div>
-                    <div class="overlay">
-                      <div class="contentOverlay">
-                        <div class="cate">Key visual</div>
-                        <div class="name">
-                          Lats <br />
-                          wrks
-                        </div>
+                  <div class="overlay">
+                    <div class="contentOverlay">
+                      <div class="cate">Key visual</div>
+                      <div class="name">
+                        Lats <br />
+                        wrks
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
             </div>
           </div>
-
-          <div class="sp workList displayFlex" id="tabs-1">
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>KEY VISUAL</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider2.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>CAMPAIGNS</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider3.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>RESEARCH</p>
-                <h4>WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>PUBLIC RELATIONS</p>
-                <h4>L.A.T</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="sp workList displayFlex" id="tabs-2">
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>KEY VISUAL</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider2.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>CAMPAIGNS</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider3.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>RESEARCH</p>
-                <h4>WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>PUBLIC RELATIONS</p>
-                <h4>L.A.T</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="sp workList displayFlex" id="tabs-3">
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>KEY VISUAL</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider2.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>CAMPAIGNS</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider3.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>RESEARCH</p>
-                <h4>WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>PUBLIC RELATIONS</p>
-                <h4>L.A.T</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="sp workList displayFlex" id="tabs-4">
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>KEY VISUAL</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider2.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>CAMPAIGNS</p>
-                <h4>LATS WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider3.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>RESEARCH</p>
-                <h4>WRKS</h4>
-              </div>
-            </div>
-            <div class="workItem col-2">
-              <div class="workImage">
-                <img src="./images/top/slider1.jpg" alt="" />
-              </div>
-              <div class="workInfo">
-                <p>PUBLIC RELATIONS</p>
-                <h4>L.A.T</h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="centerText">
-            <a href="#" class="commonBtn"> View all </a>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-      </section>
-      <section id="news" class="section">
-        <h3 class="sectionTitle centerText">News</h3>
-        <p class="descTitle centerText">STAY UPDATED ON OUR DAILY ROUTINE</p>
-        <div class="gallery displayFlex">
-          <div class="col-3">
-            <div class="row displayFlex">
-              <div class="col-2">
-                <img
-                  class="load"
-                  src="./images/top/gall1.jpg"
-                  alt="gallery"
-                />
+        <div class="sliderContent" id="tabs-2">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
               </div>
-              <div class="col-2">
-                <img
-                  class="load"
-                  src="./images/top/gall2.jpg"
-                  alt="gallery"
-                />
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider2.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider3.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="">
-              <img class="load" src="./images/top/gall5.jpg" alt="gallery" />
-            </div>
           </div>
-          <div class="col-3">
-            <div class="row">
-              <img src="./images/top/gall3.jpg" alt="gallery" />
-            </div>
-            <div class="pc">
-              <img src="./images/top/gall6.jpg" alt="gallery" />
-            </div>
-          </div>
-          <div class="col-3 pc">
-            <div class="row">
-              <img src="./images/top/gall4.jpg" alt="gallery" />
-            </div>
-            <div class="">
-              <img src="./images/top/gall7.jpg" alt="gallery" />
-            </div>
-          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-
-
-         
-
-       
-
-
-
-
+        <div class="sliderContent" id="tabs-3">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider2.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider3.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="sliderContent" id="tabs-4">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider2.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider3.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="workItem">
+                  <div class="workImage">
+                    <img src="./images/top/slider1.jpg" alt="" />
+                  </div>
+                  <div class="workInfo">
+                    <p>KEY VISUAL</p>
+                    <h4>LATS WRKS</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
 
         <div class="centerText">
-          <a href="#" class="commonBtn"> Read all </a>
+          <a href="#" class="commonBtn"> View all </a>
         </div>
-      </section>
-      <section id="ourBlog" class="section greyBg">
-        <div class="container">
-          <h3 class="sectionTitle centerText">Our blog</h3>
-          <p class="descTitle centerText">LET’S TELL THE STORIES THAT MATTER</p>
-          <div class="blogList displayFlex">
-            <div class="blogCard col-4">
-              <div class="avatar">
-                <img src="./images/top/blog1.jpg" alt="blog" />
-              </div>
-              <div class="blogDesc">
-                <a href="#" class="category">Playground</a>
-                <h4 class="blogTitle">Privacy is power</h4>
-                <p class="blogExcerpts">
-                  Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
-                  augue
-                </p>
-                <a class="readMore" href="#"
-                  >Read more <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
+      </div>
+    </section>
+    <section id="news" class="section">
+      <h3 class="sectionTitle centerText">News</h3>
+      <p class="descTitle centerText">STAY UPDATED ON OUR DAILY ROUTINE</p>
+      <div class="gallery displayFlex">
+        <div class="col-3">
+          <div class="row displayFlex">
+            <div class="col-2">
+              <img class="load" src="./images/top/gall1.jpg" alt="gallery" />
             </div>
-            <div class="blogCard col-4">
-              <div class="avatar">
-                <img src="./images/top/blog2.jpg" alt="blog" />
-              </div>
-              <div class="blogDesc">
-                <a href="#" class="category">Collective</a>
-                <h4 class="blogTitle">App connect</h4>
-                <p class="blogExcerpts">
-                  Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
-                  augue
-                </p>
-                <a class="readMore" href="#"
-                  >Read more <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="blogCard col-4">
-              <div class="avatar">
-                <img src="./images/top/blog3.jpg" alt="blog" />
-              </div>
-              <div class="blogDesc">
-                <a href="#" class="category">Tutorial</a>
-                <h4 class="blogTitle">Open source guides</h4>
-                <p class="blogExcerpts">
-                  Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
-                  augue
-                </p>
-                <a class="readMore" href="#"
-                  >Read more <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
-            </div>
-            <div class="blogCard col-4">
-              <div class="avatar">
-                <img src="./images/top/blog4.jpg" alt="blog" />
-              </div>
-              <div class="blogDesc">
-                <a href="#" class="category">Tutorial</a>
-                <h4 class="blogTitle">Design Templates</h4>
-                <p class="blogExcerpts">
-                  Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
-                  augue
-                </p>
-                <a class="readMore" href="#"
-                  >Read more <i class="fa-solid fa-arrow-right"></i
-                ></a>
-              </div>
+            <div class="col-2">
+              <img class="load" src="./images/top/gall2.jpg" alt="gallery" />
             </div>
           </div>
-          <div class="centerText">
-            <a href="#" class="commonBtn"> View all </a>
+          <div class="">
+            <img class="load" src="./images/top/gall5.jpg" alt="gallery" />
           </div>
         </div>
-      </section>
-      <section id="hiring" class="section">
-        <img class="pc" src="./images/top/hiring.jpg" alt="contact" />
-        <img class="sp" src="./images/top/hiring_mb.jpg" alt="contact" />
-        <div class="hiringBox">
-          <h3 class="centerText">Let's work together.</h3>
-          <div class="centerText">
-            <a class="commonBtn" href="#">We are hiring</a>
+        <div class="col-3">
+          <div class="row">
+            <img src="./images/top/gall3.jpg" alt="gallery" />
+          </div>
+          <div class="pc">
+            <img src="./images/top/gall6.jpg" alt="gallery" />
           </div>
         </div>
-      </section>
+        <div class="col-3 pc">
+          <div class="row">
+            <img src="./images/top/gall4.jpg" alt="gallery" />
+          </div>
+          <div class="">
+            <img src="./images/top/gall7.jpg" alt="gallery" />
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="centerText">
+        <a href="#" class="commonBtn"> Read all </a>
+      </div>
+    </section>
+    <section id="ourBlog" class="section greyBg">
+      <div class="container">
+        <h3 class="sectionTitle centerText">Our blog</h3>
+        <p class="descTitle centerText">LET’S TELL THE STORIES THAT MATTER</p>
+        <div class="blogList displayFlex">
+          <div class="blogCard col-4">
+            <div class="avatar">
+              <img src="./images/top/blog1.jpg" alt="blog" />
+            </div>
+            <div class="blogDesc">
+              <a href="#" class="category">Playground</a>
+              <h4 class="blogTitle">Privacy is power</h4>
+              <p class="blogExcerpts">
+                Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
+                augue
+              </p>
+              <a class="readMore" href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blogCard col-4">
+            <div class="avatar">
+              <img src="./images/top/blog2.jpg" alt="blog" />
+            </div>
+            <div class="blogDesc">
+              <a href="#" class="category">Collective</a>
+              <h4 class="blogTitle">App connect</h4>
+              <p class="blogExcerpts">
+                Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
+                augue
+              </p>
+              <a class="readMore" href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blogCard col-4">
+            <div class="avatar">
+              <img src="./images/top/blog3.jpg" alt="blog" />
+            </div>
+            <div class="blogDesc">
+              <a href="#" class="category">Tutorial</a>
+              <h4 class="blogTitle">Open source guides</h4>
+              <p class="blogExcerpts">
+                Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
+                augue
+              </p>
+              <a class="readMore" href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="blogCard col-4">
+            <div class="avatar">
+              <img src="./images/top/blog4.jpg" alt="blog" />
+            </div>
+            <div class="blogDesc">
+              <a href="#" class="category">Tutorial</a>
+              <h4 class="blogTitle">Design Templates</h4>
+              <p class="blogExcerpts">
+                Quisque ut augue in sapien mollis pretium a at dui. Quisque ut
+                augue
+              </p>
+              <a class="readMore" href="#">Read more <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="centerText">
+          <a href="#" class="commonBtn"> View all </a>
+        </div>
+      </div>
+    </section>
+    <section id="hiring" class="section">
+      <img class="pc" src="./images/top/hiring.jpg" alt="contact" />
+      <img class="sp" src="./images/top/hiring_mb.jpg" alt="contact" />
+      <div class="hiringBox">
+        <h3 class="centerText">Let's work together.</h3>
+        <div class="centerText">
+          <a class="commonBtn" href="#">We are hiring</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="container">
+    <div class="topInfo displayFlex">
+      <a class="logoFooter" href="#">
+        <img src="./images/common/footer_logo.png" alt="logo" />
+      </a>
+      <div class="displayFlex contactArea">
+        <div><a class="commonBtn" href="#">Get in touch</a></div>
+        <div class="icon displayFlex">
+          <a href="">
+            <img src="./images/common/fb.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./images/common/insta.png" alt="" />
+          </a>
+        </div>
+      </div>
     </div>
-    <footer class="container">
-      <div class="topInfo displayFlex">
-        <a class="logoFooter" href="#">
-          <img src="./images/common/footer_logo.png" alt="logo" />
-        </a>
-        <div class="displayFlex contactArea">
-          <div><a class="commonBtn" href="#">Get in touch</a></div>
-          <div class="icon displayFlex">
-            <a href="">
-              <img src="./images/common/fb.png" alt="" />
-            </a>
-            <a href="">
-              <img src="./images/common/insta.png" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="footerNav displayFlex">
-        <h4>© COPYRIGHT 2015 · ALIVE CO., LTD</h4>
-        <ul class="displayFlex">
-          <li><a href="">What we do</a></li>
-          <li><a href="">Our Work</a></li>
-          <li><a href="">Who We are</a></li>
-          <li><a href="">Get in touch</a></li>
-          <li class="pc"><a href="">Sitemap</a></li>
-        </ul>
-      </div>
-    </footer>
-    <script src="./js/script.js"></script>
-  </body>
+    <div class="footerNav displayFlex">
+      <h4>© COPYRIGHT 2015 · ALIVE CO., LTD</h4>
+      <ul class="displayFlex">
+        <li><a href="">What we do</a></li>
+        <li><a href="">Our Work</a></li>
+        <li><a href="">Who We are</a></li>
+        <li><a href="">Get in touch</a></li>
+        <li class="pc"><a href="">Sitemap</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="./js/script.js"></script>
+</body>
 </html>

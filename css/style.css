@@ -7,6 +7,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -86,7 +87,8 @@ a {
 
 /* common */
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
+  padding: 0 20px;
   width: 100%;
   margin: 0 auto;
 }
@@ -165,36 +167,49 @@ img {
 
 /* header */
 
-#navbar {
+#header {
   padding: 32px 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 99;
 }
 
-#navbar.active {
-  background-color: #8dc31f;
-}
-
-#navbar.active .menu .nav > li > a {
-  color: var(--white);
-}
-
-.menu .nav > li {
+#header .nav > li {
   margin-right: 30px;
   text-transform: uppercase;
 }
 
-.menu .lang .on {
+#header .nav > li > a {
+  display: block;
+  position: relative;
+}
+
+#header .nav > li > a::after {
+  content: "";
+  background: var(--white);
+  height: 1px;
+  width: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+#header .nav > li > a:hover::after {
+  width: 100%;
+}
+
+#header .lang .on {
   color: #b2b2b2;
 }
 
-.menu .lang > li:nth-child(3) {
+#header .lang > li:nth-child(3) {
   margin-right: 0;
 }
 
-.menu .lang > li {
+#header .lang > li {
   margin-right: 14px;
   color: var(--white);
   position: relative;
@@ -202,26 +217,28 @@ img {
   font-size: 1rem;
 }
 
-.menu .lang > li:nth-child(1)::after {
+#header .lang > li:nth-child(1)::after {
   content: "\002F";
   position: absolute;
   color: var(--white);
   right: -8px;
 }
 
-.menu .lang > li:nth-child(2)::after {
+#header .lang > li:nth-child(2)::after {
   content: "\002F";
   position: absolute;
   color: var(--white);
   right: -8px;
 }
 
-.menu .nav > li > a {
+#header .nav > li > a {
   color: var(--white);
   font-size: 1.2rem;
   letter-spacing: 0.104em;
   line-height: 2.4rem;
 }
+
+/* section */
 
 .section:not(#hiring) {
   padding: 100px 0;
@@ -230,7 +247,7 @@ img {
 .section .commonBtn {
   border: solid 2px var(--title-color);
   color: #595758;
-  padding: 22px 90px;
+  padding: 14px 76px;
 }
 
 .section .commonBtn:hover,
@@ -240,8 +257,14 @@ footer .commonBtn:hover {
   border-color: var(--white);
   transition: all ease-out 0.5s;
 }
+/* mainVisual */
 
 #mainVisual {
+  background: url(../images/top/banner.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -249,27 +272,25 @@ footer .commonBtn:hover {
   width: 100%;
 }
 
-#mainVisual > .contentBox {
-  position: absolute;
-  top: 50%;
-  left: 16%;
-  transform: translateY(-50%);
+#mainVisual .boxTxt {
+  padding-left: 60px;
 }
 
-#mainVisual h2 {
-  font-size: 4rem;
+#mainVisual .mainTxt {
+  font-size: 40px;
   color: var(--white);
   font-weight: bold;
-  letter-spacing: 3.2px;
-  line-height: 76px;
+  letter-spacing: 5px;
+  line-height: 70px;
   text-transform: uppercase;
-  margin-bottom: 48px;
+  margin-bottom: 26px;
 }
 
 #mainVisual .commonBtn {
+  font-size: 18px;
   color: var(--white);
   border: solid 2px var(--white);
-  padding: 24px 40px;
+  padding: 14px 35px;
 }
 
 #mainVisual .commonBtn:hover {
@@ -545,11 +566,6 @@ footer .footerNav ul li > a {
     .menu .nav > li {
         margin-right: 24px;
     }
-    .container {
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
     .commonBtn {
         font-size: 1.4rem;
     }
@@ -611,7 +627,7 @@ footer .footerNav ul li > a {
 }
 
 @media only screen and (max-width: 768px) {
-  #navbar {
+  #header {
     padding: 16px 0;
   }
 
@@ -662,46 +678,57 @@ footer .footerNav ul li > a {
     background-color: #8dc31f;
     visibility: visible;
   }
-
-  /*end btn*/
-
-  
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  /*menuBtn*/  
+  .logo {
+    width: 90px;
+  }
   .menuBtn {
+    cursor: pointer;
     color: var(--white);
+    order: 2;
   }
 
   .menuBtn:hover, .closeMenu:hover {
     cursor: pointer;
   }
-
-  .menuMb {
-    /* padding: 30px 0; */
+  .menuBox {
     position: absolute;
-    right: -800px;
-    top: 0;
-    background-color: #5b624f;
-    width: 100%;
-    transition: 0.5s;
-    height: 90vh;
-    opacity: 0.9;
-  }
-
-  .menuMb li > a {
-    color: var(--white)
-  }
-
-  .menuMb.active {
     right: 0;
+    transform: translateY(-100%);
+    top: 0;
+    background-color: rgba(85, 86, 84, 0.9);
+    width: 100%;
+    transition: all 0.5s;
+    height: 85vh;
+    opacity: 0;
+    z-index: 99;
+  }
+  .menuBox.active {
+    transform: translateY(0%);
+    opacity: 1;
     display: block;
   }
 
-  .menuMb > ul {
-    flex-direction: column;
+  #header .menuBox > ul {
+    flex-wrap: wrap;
   }
 
-  .menuMb > ul > li {
+  #header .menuBox > ul > li {
+    margin: 0;
     padding: 30px;
     text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+
+  #header .nav > li > a {
+    font-size: 18.5px;
+    font-weight: bold;
+    color: var(--white)
   }
   
   .container {
@@ -732,20 +759,23 @@ footer .footerNav ul li > a {
       padding: 50px 0;
     }
 
-    #mainVisual h2 {
-       font-size: 2.4rem;
-       letter-spacing: 1.6px;
+    /* #mainVisual */
+    #mainVisual {
+      background: url(../images/top/banner_mb.jpg) no-repeat center center;
+      background-size: cover;
+      height: 85vh;
+    }
+    #mainVisual .boxTxt {
+      padding-left: 0;
+    }
+    #mainVisual .mainTxt {
+       font-size: 20px;
+       letter-spacing: 3px;
        line-height: 38px;
     }
 
     #mainVisual .commonBtn {
       padding: 12px 20px;
-    }
-
-    #mainVisual > .contentBox {
-      top: 50%;
-      left: 10%;
-      transform: translateY(-50%);
     }
 
     #latestWorks .jobsTab {
@@ -906,6 +936,60 @@ footer .footerNav ul li > a {
       position: absolute;
       transform: rotate(-45deg);
       left: 28px;
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    display: none !important;
+  }
+
+
+
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #latestWorks .swiper-slide {
+    width:  50%;
+  }
+
+  #latestWorks .sliderContent {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  #latestWorks .swiper {
+    margin: 0 -8px;
+  }
+
+
+  #latestWorks .swiper-slide {
+    pointer-events: none;
+  }
+
+  #latestWorks .overlay {
+    position: relative;
+    height: auto;
+    background-color: var(--white)
+  }
+
+  #latestWorks .contentOverlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    text-align: left;
+  }
+
+  .overlay .name,.overlay .cate {
+    color: var(--title-color);
+  }
+  .overlay .cate {
+    margin: 10px 0;
+  }
+
+  .overlay .name {
+    margin-top: 0;
   }
 
     
