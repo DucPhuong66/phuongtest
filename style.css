@@ -598,7 +598,7 @@ footer .footerNav ul li > a {
 }
 
 @media only screen and (max-width: 768px) {
-  
+
   /* lang btn */
   .wrapperDropdown {
     position: relative;
@@ -714,12 +714,18 @@ footer .footerNav ul li > a {
       flex-direction: column;
     }
 
+    #section02 .jobsTab.active li {
+      display: flex;
+    }
+
     #section02 .jobsTab li {
       width: 100%;
+      display: none;
     }
 
     #section02 .jobsTab li.on {
         background-color: var(--white);
+        display: flex;
     }
 
     #section02 .jobsTab li.on a {

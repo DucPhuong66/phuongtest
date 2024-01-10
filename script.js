@@ -38,6 +38,16 @@ $('.jobsTab li').click(function(){
   return false;
 });
 
+$('#section02 .jobsTab li').click(function(){
+    $(this).parent().toggleClass('active')
+    $('.fa-angle-down').remove()
+    $(this).append('<i class="sp fa-solid fa-angle-down"></i>')
+   
+})
+
+
+
+
 
 // Show the first tab and hide the rest MB
 $('.workList').hide();
@@ -72,6 +82,10 @@ $('.closeMenu').click(function () {
 
 
 
+
+
+
+//lang Btn
 $(function() {
   var dd1 = new dropDown($('#myDropdown'));
   
@@ -106,3 +120,5 @@ dropDown.prototype = {
   }
 }
  
+
+
