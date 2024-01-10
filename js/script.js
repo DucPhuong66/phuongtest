@@ -38,16 +38,12 @@ $('.jobsTab li').click(function(){
   return false;
 });
 
-$('#section02 .jobsTab li').click(function(){
+$('#latestWorks .jobsTab li').click(function(){
     $(this).parent().toggleClass('active')
     $('.fa-angle-down').remove()
     $(this).append('<i class="sp fa-solid fa-angle-down"></i>')
    
 })
-
-
-
-
 
 // Show the first tab and hide the rest MB
 $('.workList').hide();
@@ -57,7 +53,6 @@ $('.workList:first').css('display', 'flex');
 // Click function MB
 $('.jobsTab li').click(function(){
   $('.workList').hide();
- 
   var activeTab = $(this).find('a').attr('href');
   $(activeTab+'.workList ').fadeIn();
   return false;
@@ -119,13 +114,6 @@ dropDown.prototype = {
     });
   }
 }
-
-$('.gallery ').imagesLoaded({
-  background: true
-}, function( imgLoad ) {
-  $status.text( imgLoad.images.length + ' images loaded checking backgrounds' );
-}
-);
  
 
 
