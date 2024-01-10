@@ -119,6 +119,13 @@ dropDown.prototype = {
     });
   }
 }
+
+$('.gallery ').imagesLoaded({
+  background: true
+}, function( imgLoad ) {
+  $status.text( imgLoad.images.length + ' images loaded checking backgrounds' );
+}
+);
  
 
 
