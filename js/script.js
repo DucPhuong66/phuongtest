@@ -76,7 +76,7 @@ $('.hiddenMenu .menuBtn').click(function () {
   $('.menuMb').toggleClass("active");
 })
 
-$('.closeMenu').click(function () {
+$('.close').click(function () {
   $('.menuMb').toggleClass("active");
 })
 

@@ -251,8 +251,8 @@ footer .commonBtn:hover {
 #section01 > .contentBox {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 31.5%;
+  transform: translate(-50%, -60%);
 }
 
 #section01 h2 {
@@ -262,7 +262,7 @@ footer .commonBtn:hover {
   letter-spacing: 3.2px;
   line-height: 76px;
   text-transform: uppercase;
-  margin-bottom: 54px;
+  margin-bottom: 48px;
 }
 
 #section01 .commonBtn {
@@ -663,21 +663,16 @@ footer .footerNav ul li > a {
     cursor: pointer;
   }
 
-  .closeMenu {
-    text-align: right;
-    padding-right: 30px;
-    color: var(--white);
-  }
-
   .menuMb {
-    padding: 30px 0;
+    /* padding: 30px 0; */
     position: absolute;
     right: -700px;
     top: 0;
-    background-color: var(--primary);
-    width: 90%;
+    background-color: #5b624f;
+    width: 100%;
     transition: 0.5s;
-    height: 96vh;
+    height: 90vh;
+    opacity: 0.9;
   }
 
   .menuMb li > a {
@@ -695,6 +690,7 @@ footer .footerNav ul li > a {
 
   .menuMb > ul > li {
     padding: 30px;
+    text-transform: uppercase;
   }
   
   .container {
@@ -875,6 +871,32 @@ footer .footerNav ul li > a {
     footer .footerNav ul li {
       margin-right: 16px;
     }
+
+
+    .close {  
+      width: 50px;
+      height: 50px;
+      position: relative;
+      margin-top: 20px;
+      margin-left: 20px;
+  }
+  .close:after {
+      content: '';
+      height: 50px;
+      border-left: 2px solid #fff;
+      position: absolute;
+      transform: rotate(45deg);
+      left: 28px;
+  }
+  
+  .close:before {
+      content: '';
+      height: 50px;
+      border-left: 2px solid #fff;
+      position: absolute;
+      transform: rotate(-45deg);
+      left: 28px;
+  }
 
     
 
