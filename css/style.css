@@ -240,7 +240,7 @@ footer .commonBtn:hover {
   border-color: var(--white);
 }
 
-#mainVisual.section {
+#mainVisual {
   position: relative;
 }
 
@@ -547,7 +547,7 @@ footer .footerNav ul li > a {
         padding: 18px 48px;
     }
 
-    .section:not(#mainVisual, #hiring) {
+    .section:not(#hiring) {
         padding: 50px 0;
     }
 
