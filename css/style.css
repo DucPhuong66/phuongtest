@@ -38,49 +38,49 @@ a {
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-Hairline.otf");
+  src: url("../font/Montserrat-Hairline.otf");
   font-weight: 100;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-UltraLight.otf");
+  src: url("../font/Montserrat-UltraLight.otf");
   font-weight: 200;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-Light.otf");
+  src: url("../font/Montserrat-Light.otf");
   font-weight: 300;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-Regular.otf");
+  src: url("../font/Montserrat-Regular.otf");
   font-weight: 400;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-SemiBold.otf");
+  src: url("../font/Montserrat-SemiBold.otf");
   font-weight: 600;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-Bold.otf");
+  src: url("../font/Montserrat-Bold.otf");
   font-weight: 700;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-ExtraBold.otf");
+  src: url("../font/Montserrat-ExtraBold.otf");
   font-weight: 800;
 }
 
 @font-face {
   font-family: Montserrat;
-  src: url("./font/Montserrat-Black.otf");
+  src: url("../font/Montserrat-Black.otf");
   font-weight: 900;
 }
 
@@ -521,10 +521,9 @@ footer .footerNav ul li > a {
   color: #595758;
 }
 
-.footerNav > ul {
+/* .footerNav > ul {
   margin-right: -32px;
-}
-
+} */
 
 
 @media only screen and (max-width: 1170px) and (min-width: 768px)  {
@@ -838,7 +837,7 @@ footer .footerNav ul li > a {
     }
 
     #section04 .blogDesc .blogTitle {
-      font-size: 1.2rem;
+      /* font-size: 1.2rem; */
     }
 
     #section04 .blogDesc .blogExcerpts {
