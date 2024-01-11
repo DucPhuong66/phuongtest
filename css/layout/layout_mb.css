@@ -247,7 +247,9 @@
       }
   
       #ourBlog .blogDesc .blogTitle {
-        /* font-size: 1.2rem; */
+        font-size: 1.3rem;
+        letter-spacing: 0.8px;
+        font-weight: 600;
       }
   
       #ourBlog .blogDesc .blogExcerpts {
