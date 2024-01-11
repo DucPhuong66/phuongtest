@@ -482,7 +482,7 @@
     display: block;
   }
   
-  footer .footerNav h4 {
+  footer .footerNav p {
     font-size: 1.2rem;
     color: #595758;
     font-weight: normal;
@@ -498,9 +498,14 @@
     letter-spacing: 1.728px;
     margin-right: 32px;
   }
+
+  footer .footerNav ul li:last-child {
+    margin-right: 0;
+  }
   
   footer .footerNav ul li > a {
     color: #595758;
+    text-transform: uppercase;
   }
   
   /* .footerNav > ul {
