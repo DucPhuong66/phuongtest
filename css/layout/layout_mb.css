@@ -1,420 +1,409 @@
 @media only screen and (max-width: 768px) {
-    #header {
-      padding: 16px 0;
-    }
-  
-    /* lang btn */
-    .wrapperDropdown {
-      position: relative;
-      display: inline-block; 
-      margin-right: 20px;
-      padding: 2px 5px;
-      background: transparent;
-      text-align: left;
-      color: var(--white);
-      border: solid 1px var(--white);
-      cursor: pointer;
-    }
-     
-    .wrapperDropdown .dropdown {
-      position: absolute;
-      top: 100%;
-      right: 0;
-      left: 0;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      transition: .5s ease;
-      opacity: 0;
-      visibility: hidden;
-    }
-    
-    .wrapperDropdown .dropdown li {
-      padding: 5px;
-      border: 1px solid var(--white);
-      overflow: hidden;
-      transition: .5s ease;
-    }
-    
-    .wrapperDropdown .dropdown li:hover {
-      background: rgba(197, 239, 247, .55);
-    }
-  
-    .wrapperDropdown .dropdown li:nth-child(2) {
-      border-top: none;
-      border-bottom: none;
-    }
-    
-    .wrapperDropdown.active .dropdown {
-      opacity: 1;
-      background-color: #8dc31f;
-      visibility: visible;
-    }
-    html,
-    body {
-      overflow-x: hidden;
-    }
-    /*menuBtn*/  
-    .logo {
-      width: 90px;
-    }
-    .menuBtn {
-      cursor: pointer;
-      color: var(--white);
-      order: 2;
-    }
-  
-    .menuBtn:hover, .closeMenu:hover {
-      cursor: pointer;
-    }
-    .menuBox {
-      position: absolute;
-      right: 0;
-      transform: translateY(-100%);
-      top: 0;
-      background-color: rgba(85, 86, 84, 0.9);
-      width: 100%;
-      transition: all 0.5s;
-      height: 85vh;
-      opacity: 0;
-      z-index: 99;
-    }
-    .menuBox.active {
-      transform: translateY(0%);
-      opacity: 1;
-      display: block;
-    }
-  
-    #header .menuBox > ul {
-      flex-wrap: wrap;
-    }
-  
-    #header .menuBox > ul > li {
-      margin: 0;
-      padding: 30px;
-      text-transform: uppercase;
-      text-align: center;
-      width: 100%;
-    }
-  
-    #header .nav > li > a {
-      font-size: 18.5px;
-      font-weight: bold;
-      color: var(--white)
-    }
-    
-    .container {
-        max-width: 100%;
-        padding: 0 20px;
-      }
-  
-      .sectionTitle {
-        font-size: 2rem;
-        
-      }
-  
-      .descTitle {
-        /* font-size: 1.2rem; */
-        margin-bottom: 35px;
-      }
-  
-      .commonBtn {
-        font-size: 1.2rem;
-        letter-spacing: 1.6px;
-      }
-  
-      .section .commonBtn {
-          font-weight: bold;
-          padding: 14px 50px;
-      }
-  
-      .section:not(#mainVisual, #hiring) {
-        padding: 50px 0;
-      }
-  
-      /* #mainVisual */
-      #mainVisual {
-        background: url(../../images/top/banner_mb.jpg) no-repeat center center;
-        background-size: cover;
-        height: 85vh;
-      }
-      #mainVisual .boxTxt {
-        padding-left: 0;
-      }
-      #mainVisual .mainTxt {
-         font-size: 20px;
-         letter-spacing: 3px;
-         line-height: 38px;
-      }
-  
-      #mainVisual .commonBtn {
-        padding: 12px 20px;
-      }
-  
-      #latestWorks .jobsTab {
-        margin-bottom: 35px;
-      }
-      
-      #latestWorks .workList {
-        flex-wrap: wrap;
-        margin: 0 -8px;
-      }
-      #latestWorks .workItem {
-        padding: 0 8px;
-        margin-bottom: 58px;
-      } 
-  
-      #latestWorks .workInfo  {
-        color: #595758;
-      }
-  
-      #latestWorks .workInfo > p {
-        font-size: 1.1rem;
-        margin: 10px 0;
-  
-      }
-  
-      #latestWorks .workInfo > h4 {
-        font-size: 1.4rem;
-      } 
-  
-      #latestWorks .jobsTab {
-        flex-direction: column;
-      }
-  
-      #latestWorks .jobsTab.active li {
-        display: flex;
-      }
-  
-      #latestWorks .jobsTab li {
-        width: 100%;
-        display: none;
-      }
-  
-      #latestWorks .jobsTab li.on {
-          background-color: var(--white);
-          display: flex;
-      }
-  
-      #latestWorks .jobsTab li.on a {
-        color: var(--title-color);
-        font-weight: bold;
-      }
-  
-      #latestWorks .jobsTab.active li.on i{
-        transform: rotateZ(-180deg);
-        transition: 0.5s;
-      }
-  
-      #news .gallery {
-        flex-direction: column;
-        gap: 15px;
-        margin-bottom: 35px;
-      }
-  
-      #news .gallery .col-3 {
-        width: 100%;
-      }
-  
-      #news .row.displayFlex {
-        gap: 15px;
-      }
-  
-      #news .gallery .row {
-        margin-bottom: 15px;
-      }
-  
-      #ourBlog .blogList {
-        flex-wrap: wrap;
-        gap: 0;
-        margin: 0 -10px;
-      }
-  
-      #ourBlog .blogList .col-4 {
-        width: 50%;
-        padding: 0 10px;
-        margin-bottom: 28px;
-      }
-  
-      
-  
-      #ourBlog .blogDesc {
-        margin-top: 10px;
-      }
-  
-      #ourBlog .blogDesc .category {
-        font-size: 1.2rem;
-      }
-  
-      #ourBlog .blogDesc .blogTitle {
-        font-size: 1.3rem;
-        letter-spacing: 0.8px;
-        font-weight: 600;
-      }
-  
-      #ourBlog .blogDesc .blogExcerpts {
-        font-size: 1rem;
-      }
-  
-      #hiring .hiringBox > h3 {
-        font-size: 2.4rem;
-        margin-bottom: 22px;
-      }
-  
-      footer .topInfo, footer .contactArea {
-        flex-direction: column;
-      }
-  
-      footer .topInfo {
-        gap: 46px;
-        margin: 80px 0;
-      }
-    
-  
-      footer .contactArea {
-        gap: 30px;
-      }
-  
-      footer .footerNav {
-        flex-direction: column-reverse;
-        gap: 44px;
-      }
-  
-      footer .commonBtn {
-        padding: 14px 28px;
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-      
-      footer .footerNav ul li {
-        margin-right: 0;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-  
-      }
-
-      .topInfo .logoFooter {
-          text-align: center;
-      }
-
-      .topInfo .logoFooter > img {
-        width: 90%;
-      }
-
-      footer .footerNav ul li:nth-child(4) {
-        margin-right: 0;
-      }
-
-      .footerNav  > ul {
-        align-self: normal;
-      }
-
-      footer .icon {
-        gap: 0;
-      }
-
-      footer .icon a {
-        text-align: center;
-      }
-
-      footer .icon img.sp {
-        width: 62%;
-      }
-
-      footer .footerNav h4 {
-        font-size: 0.9rem;
-      }
-
-      
-    footer .footerNav p {
-      font-size: 1.1rem;
-    }
-  
-  
-      .close {  
-        width: 50px;
-        height: 50px;
-        position: relative;
-        margin-top: 20px;
-        margin-left: 20px;
-    }
-    .close:after {
-        content: '';
-        height: 50px;
-        border-left: 2px solid #fff;
-        position: absolute;
-        transform: rotate(45deg);
-        left: 28px;
-    }
-    
-    .close:before {
-        content: '';
-        height: 50px;
-        border-left: 2px solid #fff;
-        position: absolute;
-        transform: rotate(-45deg);
-        left: 28px;
-    }
-  
-    .swiper-button-next, .swiper-button-prev {
-      display: none !important;
-    }
-  
-  
-  
-    .swiper-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    #latestWorks .swiper-slide {
-      width:  50%;
-    }
-  
-    #latestWorks .sliderContent {
-      max-width: 100%;
-      margin: 0;
-    }
-  
-    #latestWorks .swiper {
-      margin: 0 -8px;
-    }
-  
-  
-    #latestWorks .swiper-slide {
-      pointer-events: none;
-    }
-  
-    #latestWorks .overlay {
-      position: relative;
-      height: auto;
-      background-color: transparent;
-    }
-  
-    #latestWorks .contentOverlay {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: none;
-      text-align: left;
-    }
-  
-    .overlay .name,.overlay .cate {
-      color: var(--title-color);
-    }
-    .overlay .cate {
-      margin: 10px 0;
-    }
-  
-    .overlay .name {
-      margin-top: 0;
-    }
-  
-    #hiring .commonBtn {
-        padding: 14px 28px;
-    }
-
-  
-      
-  
+  #header {
+    padding: 16px 0;
   }
+
+  /* lang btn */
+  .wrapperDropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 2px 5px;
+    background: transparent;
+    text-align: left;
+    color: var(--white);
+    border: solid 1px var(--white);
+    cursor: pointer;
+  }
+
+  .wrapperDropdown .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .wrapperDropdown .dropdown li {
+    padding: 5px;
+    border: 1px solid var(--white);
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+
+  .wrapperDropdown .dropdown li:hover {
+    background: rgba(197, 239, 247, 0.55);
+  }
+
+  .wrapperDropdown .dropdown li:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+  }
+
+  .wrapperDropdown.active .dropdown {
+    opacity: 1;
+    background-color: #8dc31f;
+    visibility: visible;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  /*menuBtn*/
+  .logo {
+    width: 90px;
+  }
+  .menuBtn {
+    cursor: pointer;
+    color: var(--white);
+    order: 2;
+  }
+
+  .menuBtn:hover,
+  .closeMenu:hover {
+    cursor: pointer;
+  }
+  .menuBox {
+    position: absolute;
+    right: 0;
+    transform: translateY(-100%);
+    top: 0;
+    background-color: rgba(85, 86, 84, 0.9);
+    width: 100%;
+    transition: all 0.5s;
+    height: 85vh;
+    opacity: 0;
+    z-index: 99;
+  }
+  .menuBox.active {
+    transform: translateY(0%);
+    opacity: 1;
+    display: block;
+  }
+
+  #header .menuBox > ul {
+    flex-wrap: wrap;
+  }
+
+  #header .menuBox > ul > li {
+    margin: 0;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+  }
+
+  #header .nav > li > a {
+    font-size: 18.5px;
+    font-weight: bold;
+    color: var(--white);
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .descTitle {
+    /* font-size: 1.2rem; */
+    margin-bottom: 35px;
+  }
+
+  .commonBtn {
+    font-size: 1.2rem;
+    letter-spacing: 1.6px;
+  }
+
+  .section .commonBtn {
+    font-weight: bold;
+    padding: 14px 50px;
+  }
+
+  .section:not(#mainVisual, #hiring) {
+    padding: 50px 0;
+  }
+
+  /* #mainVisual */
+  #mainVisual {
+    background: url(../../images/top/banner_mb.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+  }
+  #mainVisual .boxTxt {
+    padding-left: 0;
+  }
+  #mainVisual .mainTxt {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 38px;
+  }
+
+  #mainVisual .commonBtn {
+    padding: 12px 20px;
+  }
+
+  #latestWorks .jobsTab {
+    margin-bottom: 35px;
+  }
+
+  #latestWorks .workList {
+    flex-wrap: wrap;
+    margin: 0 -8px;
+  }
+  #latestWorks .workItem {
+    padding: 0 8px;
+    margin-bottom: 58px;
+  }
+
+  #latestWorks .workInfo {
+    color: #595758;
+  }
+
+  #latestWorks .workInfo > p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+  }
+
+  #latestWorks .workInfo > h4 {
+    font-size: 1.4rem;
+  }
+
+  #latestWorks .jobsTab {
+    flex-direction: column;
+  }
+
+  #latestWorks .jobsTab.active li {
+    display: flex;
+  }
+
+  #latestWorks .jobsTab li {
+    width: 100%;
+    display: none;
+  }
+
+  #latestWorks .jobsTab li.on {
+    background-color: var(--white);
+    display: flex;
+  }
+
+  #latestWorks .jobsTab li.on a {
+    color: var(--title-color);
+    font-weight: bold;
+  }
+
+  #latestWorks .jobsTab.active li.on i {
+    transform: rotateZ(-180deg);
+    transition: 0.5s;
+  }
+
+  #news .gallery {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 35px;
+  }
+
+  #news .gallery .col-3 {
+    width: 100%;
+  }
+
+  #news .row.displayFlex {
+    gap: 15px;
+  }
+
+  #news .gallery .row {
+    margin-bottom: 15px;
+  }
+
+  #ourBlog .blogList {
+    flex-wrap: wrap;
+    gap: 0;
+    margin: 0 -10px;
+  }
+
+  #ourBlog .blogList .col-4 {
+    width: 50%;
+    padding: 0 10px;
+    margin-bottom: 28px;
+  }
+
+  #ourBlog .blogDesc {
+    margin-top: 10px;
+  }
+
+  #ourBlog .blogDesc .category {
+    font-size: 1.2rem;
+  }
+
+  #ourBlog .blogDesc .blogTitle {
+    font-size: 1.3rem;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+  }
+
+  #ourBlog .blogDesc .blogExcerpts {
+    font-size: 1rem;
+  }
+
+  #hiring .hiringBox > h3 {
+    font-size: 2.4rem;
+    margin-bottom: 22px;
+  }
+
+  footer .topInfo,
+  footer .contactArea {
+    flex-direction: column;
+  }
+
+  footer .topInfo {
+    gap: 46px;
+    margin: 80px 0;
+  }
+
+  footer .contactArea {
+    gap: 30px;
+  }
+
+  footer .footerNav {
+    flex-direction: column-reverse;
+    gap: 44px;
+  }
+
+  footer .commonBtn {
+    padding: 14px 28px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  footer .footerNav ul li {
+    margin-right: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .topInfo .logoFooter {
+    text-align: center;
+  }
+
+  .topInfo .logoFooter > img {
+    width: 90%;
+  }
+
+  footer .footerNav ul li:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .footerNav > ul {
+    align-self: normal;
+  }
+
+  footer .icon {
+    gap: 0;
+  }
+
+  footer .icon a {
+    text-align: center;
+  }
+
+  footer .icon img.sp {
+    width: 62%;
+  }
+
+  footer .footerNav h4 {
+    font-size: 0.9rem;
+  }
+
+  footer .footerNav p {
+    font-size: 1.1rem;
+  }
+
+  .close {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .close:after {
+    content: "";
+    height: 50px;
+    border-left: 2px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 28px;
+  }
+
+  .close:before {
+    content: "";
+    height: 50px;
+    border-left: 2px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 28px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #latestWorks .swiper-slide {
+    width: 50%;
+  }
+
+  #latestWorks .sliderContent {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  #latestWorks .swiper {
+    margin: 0 -8px;
+  }
+
+  #latestWorks .swiper-slide {
+    pointer-events: none;
+  }
+
+  #latestWorks .overlay {
+    position: relative;
+    height: auto;
+    background-color: transparent;
+  }
+
+  #latestWorks .contentOverlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    text-align: left;
+  }
+
+  .overlay .name,
+  .overlay .cate {
+    color: var(--title-color);
+  }
+  .overlay .cate {
+    margin: 10px 0;
+  }
+
+  .overlay .name {
+    margin-top: 0;
+  }
+
+  #hiring .commonBtn {
+    padding: 14px 28px;
+  }
+}
