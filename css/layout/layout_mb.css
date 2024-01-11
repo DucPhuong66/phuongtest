@@ -114,7 +114,7 @@
       }
   
       .descTitle {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         margin-bottom: 35px;
       }
   
@@ -124,7 +124,8 @@
       }
   
       .section .commonBtn {
-          
+          font-weight: bold;
+          padding: 14px 50px;
       }
   
       .section:not(#mainVisual, #hiring) {
@@ -197,6 +198,7 @@
   
       #latestWorks .jobsTab li.on a {
         color: var(--title-color);
+        font-weight: bold;
       }
   
       #latestWorks .jobsTab.active li.on i{
@@ -279,10 +281,7 @@
       footer .commonBtn {
         padding: 14px 44px;
         font-size: 1.2rem;
-      }
-  
-      footer .footerNav {
-        margin-bottom: 90px;
+        font-weight: bold;
       }
       
       footer .footerNav ul li {
@@ -290,6 +289,10 @@
         text-transform: uppercase;
         letter-spacing: 1px;
   
+      }
+
+      footer .footerNav ul li:nth-child(4) {
+        margin-right: 0;
       }
 
       footer .icon {
@@ -300,7 +303,7 @@
         text-align: center;
       }
 
-      footer .icon img.mb {
+      footer .icon img.sp {
         width: 70%;
       }
 
@@ -389,7 +392,11 @@
     }
   
     #hiring .commonBtn {
-        padding: 14px 42px;
+        padding: 14px 28px;
+    }
+
+    footer .footerNav p {
+      font-size: 1.1rem;
     }
   
       
