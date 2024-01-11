@@ -281,7 +281,7 @@
       }
   
       footer .commonBtn {
-        padding: 14px 36px;
+        padding: 14px 28px;
         font-size: 1.2rem;
         font-weight: bold;
       }
@@ -291,6 +291,14 @@
         text-transform: uppercase;
         letter-spacing: 1px;
   
+      }
+
+      .topInfo .logoFooter {
+          text-align: center;
+      }
+
+      .topInfo .logoFooter > img {
+        width: 90%;
       }
 
       footer .footerNav ul li:nth-child(4) {
@@ -310,12 +318,17 @@
       }
 
       footer .icon img.sp {
-        width: 70%;
+        width: 62%;
       }
 
       footer .footerNav h4 {
         font-size: 0.9rem;
       }
+
+      
+    footer .footerNav p {
+      font-size: 1.1rem;
+    }
   
   
       .close {  
@@ -401,9 +414,6 @@
         padding: 14px 28px;
     }
 
-    footer .footerNav p {
-      font-size: 1.1rem;
-    }
   
       
   
