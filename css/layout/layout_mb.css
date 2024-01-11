@@ -279,13 +279,13 @@
       }
   
       footer .commonBtn {
-        padding: 14px 44px;
+        padding: 14px 36px;
         font-size: 1.2rem;
         font-weight: bold;
       }
       
       footer .footerNav ul li {
-        margin-right: 12px;
+        margin-right: 0;
         text-transform: uppercase;
         letter-spacing: 1px;
   
@@ -293,6 +293,10 @@
 
       footer .footerNav ul li:nth-child(4) {
         margin-right: 0;
+      }
+
+      .footerNav  > ul {
+        align-self: normal;
       }
 
       footer .icon {
